@@ -13,3 +13,4 @@ services:
 
 networks:
   riichi-ingress:
+    internal: true
