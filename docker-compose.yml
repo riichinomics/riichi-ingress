@@ -4,6 +4,12 @@ services:
   nginx:
     build:
       context: .
+    networks:
+      - riichi-ingress
+      - default
     image: ingress-nginx
     ports:
       - 80:80
+
+networks:
+  riichi-ingress:
