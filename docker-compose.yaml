@@ -5,12 +5,12 @@ services:
     build:
       context: .
     networks:
-      - riichi-ingress
+      - link
       - default
     image: ingress-nginx
     ports:
       - 80:80
 
 networks:
-  riichi-ingress:
+  link:
     internal: true
